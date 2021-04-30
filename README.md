@@ -9,5 +9,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.
 
-![Service Editor and test endpoint](./public/Capture-001.png)
-![Code Editor](./public/CodeEditor.png)
+![Service Editor and test endpoint](./public/draw-board.png)
+![Code Editor](./public/code-editor.png)
