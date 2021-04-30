@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb7b7167-4fea-496f-8d8a-8ca3e49c5b45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/App1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App1.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/board/Board.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/draggable-items/ActionHandler.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/draggable-items/ActionHeader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/board.context.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/board.reducer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1pnPWr2nZyD5skMc8KuYBaCdOO7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\Desktop\react-dragable\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\react-dragable\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\react-dragable\src\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/App.test.tsx" />
+      <test-names>
+        <test-name value="renders learn react link" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="should render header" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/App.test.tsx" />
+      <test-names>
+        <test-name value="should render header" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Draggable.tsx" type="NodeJSConfigurationType" temporary="true" node-parameters="--require ts-node/register " path-to-js-file="$PROJECT_DIR$/src/components/Draggable.tsx" working-dir="$PROJECT_DIR$/src/components">
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.should render header" />
+        <item itemvalue="Jest.renders learn react link" />
+        <item itemvalue="Node.js.Draggable.tsx" />
+        <item itemvalue="npm.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb7b7167-4fea-496f-8d8a-8ca3e49c5b45" name="Default Changelist" comment="" />
+      <created>1615815915505</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615815915505</updated>
+      <workItem from="1615815917812" duration="1779000" />
+      <workItem from="1615817728694" duration="337000" />
+      <workItem from="1615823588161" duration="982000" />
+      <workItem from="1615865289691" duration="1785000" />
+      <workItem from="1615867111536" duration="1810000" />
+      <workItem from="1615868944385" duration="1309000" />
+      <workItem from="1615870776139" duration="1248000" />
+      <workItem from="1615873814468" duration="17000" />
+      <workItem from="1615908243490" duration="1786000" />
+      <workItem from="1615910088448" duration="1787000" />
+      <workItem from="1615911892632" duration="571000" />
+      <workItem from="1615912738025" duration="1796000" />
+      <workItem from="1615958489906" duration="1800000" />
+      <workItem from="1615960317859" duration="1554000" />
+      <workItem from="1615974588787" duration="544000" />
+      <workItem from="1615976735934" duration="1366000" />
+      <workItem from="1616099067672" duration="1784000" />
+      <workItem from="1616100874069" duration="1788000" />
+      <workItem from="1616102689214" duration="1346000" />
+      <workItem from="1616193607668" duration="1784000" />
+      <workItem from="1616195416791" duration="1657000" />
+      <workItem from="1616198006683" duration="1652000" />
+      <workItem from="1616199876461" duration="1789000" />
+      <workItem from="1616201685632" duration="299000" />
+      <workItem from="1616237042489" duration="1779000" />
+      <workItem from="1616238853103" duration="1789000" />
+      <workItem from="1616240666914" duration="1111000" />
+      <workItem from="1616274412256" duration="1786000" />
+      <workItem from="1616276230789" duration="1783000" />
+      <workItem from="1616278038677" duration="1786000" />
+      <workItem from="1616279864991" duration="488000" />
+      <workItem from="1616309674720" duration="1783000" />
+      <workItem from="1616311488219" duration="294000" />
+      <workItem from="1616319257923" duration="1785000" />
+      <workItem from="1616321075569" duration="1785000" />
+      <workItem from="1616322885398" duration="1497000" />
+      <workItem from="1616327770119" duration="573000" />
+      <workItem from="1616350382321" duration="1603000" />
+      <workItem from="1616352192716" duration="1784000" />
+      <workItem from="1616354193308" duration="1816000" />
+      <workItem from="1616356031211" duration="1810000" />
+      <workItem from="1616357863750" duration="1787000" />
+      <workItem from="1616359673003" duration="1784000" />
+      <workItem from="1616361486412" duration="1788000" />
+      <workItem from="1616363446598" duration="1147000" />
+      <workItem from="1616435425920" duration="649000" />
+      <workItem from="1616854106527" duration="1751000" />
+      <workItem from="1616855887772" duration="1341000" />
+      <workItem from="1616861526111" duration="1799000" />
+      <workItem from="1616863364356" duration="1392000" />
+      <workItem from="1616866440931" duration="1207000" />
+      <workItem from="1617209013566" duration="601000" />
+      <workItem from="1617404952407" duration="22000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
