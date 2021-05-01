@@ -1,6 +1,6 @@
 ## microservice-builder 
-microservice-builder is a [PWA](https://en.wikipedia.org/wiki/Progressive_web_application) [Visual programming](https://en.wikipedia.org/wiki/Visual_programming_language) tool to build, configure and test microservices in brawser.
-It helps to auto generate project structure and source in state of the art technology [TypeScript](https://www.typescriptlang.org/), it make use of [TypeScript AST](https://basarat.gitbook.io/typescript/overview/ast) to convert user define rules into code.
+microservice-builder is a [PWA](https://en.wikipedia.org/wiki/Progressive_web_application) [Visual programming](https://en.wikipedia.org/wiki/Visual_programming_language) tool to build, configure and test microservices in the browser.
+It helps to auto-generate project structure and source in state of the art technology [TypeScript](https://www.typescriptlang.org/), it make use of [TypeScript AST](https://basarat.gitbook.io/typescript/overview/ast) to convert user define rules into code.
 It forces developer to follow [Design Pattern](https://sourcemaking.com/design_patterns), write reusable code and to provide solution for distributed architecture.
 
 
