@@ -3,6 +3,13 @@ microservice-builder is a [PWA](https://en.wikipedia.org/wiki/Progressive_web_ap
 It helps to auto-generate project structure and source in state of the art technology [TypeScript](https://www.typescriptlang.org/), it make use of [TypeScript AST](https://basarat.gitbook.io/typescript/overview/ast) to convert user define rules into code.
 It forces developer to follow [Design Pattern](https://sourcemaking.com/design_patterns), write reusable code and to provide solution for distributed architecture.
 
+- Useful for project generation
+- Unit testing
+- Integration testing
+- Third-party API integration 
+- Microservice data flow management 
+- Deadlock management
+- Extensibility, third-party microservice
 
 ## Tech Stack 
 - [NodeJS](https://nodejs.org/en/docs/), [TypeScript](https://www.typescriptlang.org/), [Codegen](https://en.wikipedia.org/wiki/Code_generation_(compiler))
