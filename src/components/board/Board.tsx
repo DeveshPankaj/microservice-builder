@@ -20,9 +20,10 @@ const Board: React.FC<Props> = (props) => {
     // const [state, dispatch] = useReducer(reducer, initialState);
     const {state, dispatch} = useContext(BoardContext);
 
-    const _line = (points: [number, number, number, number]) => {
+    const _line = (points: [number, number, number, number], key: string) => {
         let midPoint = (points[0] + points[2]) / 2
         return <path
+            key={key}
             d={`M${points[0]},${points[1]} C${midPoint},${points[1]} ${midPoint},${points[3]} ${points[2]},${points[3]}`}
             fill={'transparent'} stroke={'green'} strokeWidth={3}/>
     }
@@ -37,7 +38,7 @@ const Board: React.FC<Props> = (props) => {
                     if (!state[value.connectedTo || '']) return null
                     let line: [number, number, number, number] = [value.x, value.y, state[value.connectedTo || '']?.x, state[value.connectedTo || '']?.y]
 
-                    return _line(line)
+                    return _line(line, key)
                     //     return <path key={'line' + key}
                     //                  d={`M ${line[0]} ${line[1]} Q ${(line[0] + line[2]) * 0.25} ${(line[1] + line[3]) * 0.5}, ${(line[0] + line[2]) * 0.5} ${(line[1] + line[3]) * 0.5} T ${line[2]} ${line[3]}`}
                     //                  strokeWidth={3}

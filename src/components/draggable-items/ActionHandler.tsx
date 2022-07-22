@@ -34,7 +34,7 @@ const ActionHandler: React.FC<Props> = (props) => {
                                     <>
                                         <div></div>
                                         <div>{x.text}</div>
-                                        <FaDotCircle className={'right'} type={'output-handle'} onClick={(e)=>props.onAttributeClick(e, x.id)}/>
+                                        <FaCircle className={'right'} type={'output-handle'} onClick={(e)=>props.onAttributeClick(e, x.id)}/>
                                  </>
                             }
                         </li>

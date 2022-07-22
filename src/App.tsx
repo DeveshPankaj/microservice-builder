@@ -193,7 +193,7 @@ function App() {
     const {state, dispatch} = useContext(BoardContext);
 
     const editorConfig = {
-        height: '500px',
+        height: `${window.innerHeight}px`,
         width: `${window.innerWidth}px`,
     }
 
@@ -206,13 +206,80 @@ function App() {
         setOverlay(true)
     }
 
+    const gridRef = React.useRef<HTMLDivElement>(null)
+    const zoom = React.useRef(1)
+    const tap = React.useRef({
+        x: 0,
+        y: 0
+    })
+    const offset = React.useRef({
+        x: 0,
+        y: 0
+    })
+
+    React.useEffect(() => {
+        if(!gridRef.current) return;
+
+        const onMouseMove = (ev: MouseEvent) => {
+            let diff = {
+                x: ev.pageX - tap.current.x,
+                y: ev.pageY - tap.current.y,
+            }
+            tap.current = {x: ev.pageX, y: ev.pageY}
+            offset.current = {x: offset.current.x + diff.x, y: offset.current.y + diff.y}
+
+            if(gridRef.current) gridRef.current.style.transform = `translate(${offset.current.x / zoom.current}px, ${offset.current.y / zoom.current}px)`
+        }
+
+        const onMouseUp = (ev: MouseEvent) => {
+            gridRef.current?.removeEventListener('mouseup', onMouseUp)
+            gridRef.current?.removeEventListener('mousemove', onMouseMove)
+        }
+
+        const preventDefault = (ev: Event) => {
+            ev.preventDefault()
+        }
+
+        const onMouseDown = (ev: MouseEvent) => {
+            tap.current = {
+                x: ev.pageX,
+                y: ev.pageY
+            }
+            gridRef.current?.addEventListener('mousemove', onMouseMove)
+            gridRef.current?.addEventListener('selectstart', preventDefault)
+            gridRef.current?.addEventListener('mouseup', onMouseUp)
+        }
+
+        const onScroll = (ev: WheelEvent) => {
+            if(ev.deltaY > 0) {
+                zoom.current = zoom.current * 0.9
+            }
+            if(ev.deltaY < 0) {
+                zoom.current = zoom.current * 1.1
+            }
+
+            if(gridRef.current) gridRef.current.style.zoom = `${zoom.current}`
+        }
+        
+        gridRef.current.addEventListener('mousedown', onMouseDown)
+        gridRef.current.addEventListener('wheel', onScroll)
+
+        return () => {
+            gridRef.current?.removeEventListener('mousedown', onMouseDown)
+            gridRef.current?.removeEventListener('mousemove', onMouseMove)
+            gridRef.current?.removeEventListener('mouseup', onMouseUp)
+            gridRef.current?.removeEventListener('selectstart', preventDefault)
+            gridRef.current?.removeEventListener('wheel', onScroll)
+        }
+    }, [gridRef])
+
     return (
         <>
-            <div style={{position: 'relative', ...editorConfig}}>
+            <div style={{position: 'relative'}} ref={gridRef}>
 
                 {/*<button onClick={handleUpdate}>Update</button>*/}
-                <div style={{position: 'absolute', top: 0}} id={'board'}>
-                    <Board style={editorConfig}/>
+                <div style={{position: 'absolute', top: 0, ...editorConfig}} id={'board'}>
+                    <Board style={{width: 'inherit', height: 'inherit'}}/>
                 </div>
 
                 <div
@@ -242,7 +309,7 @@ function App() {
 
                 <ul style={{listStyle: 'none', margin: 0, padding: 0}}>
                     {
-                        selectedItem?.attributes.filter(x => x.type === 'input').map(x => <input type="text" placeholder={x.text} />)
+                        selectedItem?.attributes.filter(x => x.type === 'input').map(x => <input key={x.id} type="text" placeholder={x.text} />)
                     }
                 </ul>
 
